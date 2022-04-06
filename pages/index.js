@@ -24,7 +24,7 @@ const Telegram = "https://t.me/phezzanprotocol "
 
 const Medium = "https://medium.com/@phezzan "
 
-const Discord = "discord.gg/phezzan"
+const Discord = "https://discord.gg/phezzan"
 
 export default function Home() {
   return (
