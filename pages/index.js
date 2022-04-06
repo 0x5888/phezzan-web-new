@@ -56,7 +56,7 @@ export default function Home() {
           <div className={styles.banner}>
             <div className={styles.bannerLeft}>
               <h3>
-                World's first  interest earning
+                World&apos;s first  interest earning
                 <span> perpetual DEX </span>
               </h3>
               <div className={styles.desc}>powered by <div className={styles.imgWrapper}><Image style={{marginRight: 10}} className={styles.austLogo} width={40} height={40} src={AUstImg} alt="AUst logo" /></div> aUST <div className={styles.imgWrapper}><Image className={styles.zkLogo} width={56} height={40} src={ZkImg} alt="zkSync logo" /></div> zkSync 2.0</div>
