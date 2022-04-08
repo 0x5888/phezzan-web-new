@@ -43,7 +43,7 @@ export default function Main() {
 
   if (isMobile) {
     // eslint-disable-next-line no-useless-concat
-    window.location.href = "https://phezzan-mobile-new.vercel.app" + '?t='+Math.random()
+    window.location.href = "https://m.phezzan.xyz" + '?t='+Math.random()
 
     return <></>;
   }
