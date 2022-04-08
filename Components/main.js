@@ -32,7 +32,11 @@ export default function Main() {
 
   if (typeof window !== 'undefined') { 
     // detect window screen width function
-    const screenH = `${document.documentElement.clientHeight - 72}px`;
+    let height = document.documentElement.clientHeight
+
+    height = height >= 772 ? height: 772;
+
+    const screenH = `${height - 72}px`;
 
     if (screenHeight && (screenH === screenHeight)) {
       
