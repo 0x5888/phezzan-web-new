@@ -28,11 +28,6 @@ const Discord = "https://discord.gg/phezzan"
 
 export default function Main() {
 
-  if (isMobile) {
-    // eslint-disable-next-line no-useless-concat
-    window.location.href = "https://phezzan-mobile-new.vercel.app" + '?t='+Math.random()
-  }
-
   const [screenHeight, setScreenHeight] = useState("")  
 
   if (typeof window !== 'undefined') { 
@@ -44,6 +39,13 @@ export default function Main() {
     } else {
       setScreenHeight(screenH)
     }
+  }
+
+  if (isMobile) {
+    // eslint-disable-next-line no-useless-concat
+    window.location.href = "https://phezzan-mobile-new.vercel.app" + '?t='+Math.random()
+
+    return <></>;
   }
 
   const obj = {}
