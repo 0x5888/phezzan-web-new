@@ -123,6 +123,7 @@ export default function Main() {
               <div className={styles.line}></div>
               <p>Deposits will be converted to aUST. </p>
               <p>Earn <span>19.45%</span> APY as traders or LPs.</p>
+              <p>&nbsp;</p>
             </div>
 
             <div className={styles.advantageItem}>
