@@ -62,8 +62,15 @@
   }
 }
 
+.bannerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .banner {
-  margin-top: 138px;
+  //margin-top: 138px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,13 +172,19 @@
 }
 
 .explore {
-  margin-top: 138px;
-  margin-bottom: 41px;
+  //margin-top: 138px;
+  //margin-bottom: 41px;
+  position: absolute;
+  bottom: 6px;
+  left: 50%; 
+  transform: translateX(-50%); /* 50%为自身尺寸的一半 */
+  -webkit-transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
 
   span {
+    display: none;
     position: relative;
     z-index: 1;
     margin-top: 14px;

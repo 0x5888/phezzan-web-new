@@ -13,9 +13,9 @@ import communitycard_icon from "../assets/communitycard_icon@2x.png";
 import litepaper_icon from "../assets/litepaper_icon@2x.png";
 import styles from '../styles/Home.module.scss'
 
-import NoSSR from './NoSSR'
+import { isMobile } from 'react-device-detect';
 
-const Litepaper = "https://medium.com/@phezzan/phezzan-protocol-testnet-lite-paper-3f0af066aead"
+const Litepaper = "https://roland-1.gitbook.io/phezzan-protocol-testnet-litepaper"
 
 const Twitter = "https://twitter.com/PhezzanProtocol"
 
@@ -28,11 +28,16 @@ const Discord = "https://discord.gg/phezzan"
 
 export default function Main() {
 
+  if (isMobile) {
+    // eslint-disable-next-line no-useless-concat
+    window.location.href = "https://phezzan-mobile-new.vercel.app" + '?t='+Math.random()
+  }
+
   const [screenHeight, setScreenHeight] = useState("")  
 
   if (typeof window !== 'undefined') { 
     // detect window screen width function
-    const screenH = `${document.documentElement.clientHeight}px`;
+    const screenH = `${document.documentElement.clientHeight - 72}px`;
 
     if (screenHeight && (screenH === screenHeight)) {
       
@@ -41,16 +46,16 @@ export default function Main() {
     }
   }
 
-  const obg = {}
+  const obj = {}
   if (screenHeight) {
-    obg.height = screenHeight ? screenHeight : "100%"
+    obj.height = screenHeight ? screenHeight : "100%"
   }
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   
 
   return (
-    <NoSSR>
+    <>
       <main className={styles.main}>
           <div className={styles.header}>
               <div className={styles.inner}>
@@ -69,6 +74,8 @@ export default function Main() {
                 </div>
               </div>
           </div>
+
+          <div className={styles.bannerContainer} style={{...obj}}>
           <div className={styles.banner}>
             <div className={styles.bannerLeft}>
               <h3>
@@ -99,8 +106,9 @@ export default function Main() {
           </div>
           <div className={styles.explore}>
             <div className={styles.bounce} alt="Explore Phezzan Protocol" />
-            <span>Explore Phezzan Protocol</span>
+            {/* <span>Explore Phezzan Protocol</span> */}
           </div>
+        </div>
       </main>
 
       <div className={styles.content}>
@@ -182,6 +190,6 @@ export default function Main() {
               </div>
           </div>
       </footer>
-    </NoSSR>
+    </>
   )
 }
