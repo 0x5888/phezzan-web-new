@@ -9,6 +9,7 @@ import PHl_icon1 from "../assets/PHl_icon1@2x.png"
 import PHl_icon2 from "../assets/PHl_icon2@2x.png"
 import PHl_icon3 from "../assets/PHl_icon3@2x.png"
 import PHl_icon4 from "../assets/PHl_icon4@2x.png"
+import JoinNow from "../assets/JoinNow@2x.png"
 import communitycard_icon from "../assets/communitycard_icon@2x.png";
 import litepaper_icon from "../assets/litepaper_icon@2x.png";
 import styles from '../styles/Home.module.scss'
@@ -25,6 +26,8 @@ const Medium = "https://medium.com/@phezzan "
 
 const Discord = "https://discord.gg/phezzan"
 
+const Testnet = "https://testnet.phezzan.xyz"
+
 
 export default function Main() {
 
@@ -34,7 +37,7 @@ export default function Main() {
     // detect window screen width function
     let height = document.documentElement.clientHeight
 
-    height = height >= 772 ? height: 772;
+    height = height >= 630 ? height: 630;
 
     const screenH = `${height - 72}px`;
 
@@ -91,21 +94,16 @@ export default function Main() {
               <div className={styles.desc}>powered by <div className={styles.imgWrapper}><Image style={{marginRight: 10}} className={styles.austLogo} width={40} height={40} src={AUstImg} alt="AUst logo" /></div> aUST <div className={styles.imgWrapper}><Image className={styles.zkLogo} width={56} height={40} src={ZkImg} alt="zkSync logo" /></div> zkSync 2.0</div>
               <div className={styles.divider}></div>
               <h5> Earn <span>19.45%</span> APY while you trade. 
-                  Testnet in April.
               </h5>
-              <p>
-                Join now to be an early member, 
-                to build the product you want together, 
-                and to receive <span>exclusive rewards</span>
-              </p>
-              <a className={styles.joinNow} href={Discord} target="_blank" rel="noreferrer">
+              <h5 className={styles.testnet}>Testnet live on Rinkeby.</h5>
+              <a className={styles.joinNow} href={Testnet} target="_blank" rel="noreferrer">
                 <Image 
-                  src={JoinNowImg}
+                  src={JoinNow}
                   width={34}
                   height={24}
-                  alt="join now"
+                  alt="Join Testnet"
                 />
-                <span>Join Now</span>
+                <span>Join Testnet</span>
               </a>
             </div>
             <div className={styles.bannerRight}></div>
@@ -142,10 +140,10 @@ export default function Main() {
           <div className={styles.advantageH} style={{marginTop: "81px"}}>
             <div className={styles.advantageItem}>
               <Image src={PHl_icon3} width={140} height={149} />
-              <h5>Testnet in April on zkSync 2.0</h5>
+              <h5>Testnet live now on Rinkeby</h5>
               <div className={styles.line}></div>
               <p>Lightening fast order execution and</p>
-              <p>unbelievably low fees, powered by <span>zkSync 2.0</span></p>
+              <p>unbelievably low fees, powered by <span>zkSync 2.0</span> coming soon.</p>
             </div>
 
             <div className={styles.advantageItem}>
@@ -167,12 +165,12 @@ export default function Main() {
         <div className={styles.infoList}>
           <div className={styles.infoItem}>
             <Image src={communitycard_icon} width={242} height={242} alt="community" />
-            <h6>Join the community.</h6>
+            <h6>Join the community</h6>
             <a className={styles.button} href={Discord} target="_blank" rel="noreferrer"> Join Now</a>
           </div>
           <div className={styles.litepaper}>
             <Image src={litepaper_icon} width={242} height={242} alt="litepaper" />
-            <h6>Learn more in our litepaper.</h6>
+            <h6>Learn more in our litepaper</h6>
             <a className={styles.button} href={Litepaper} target="_blank" rel="noreferrer">Learn now</a>
           </div>
         </div>
