@@ -93,7 +93,7 @@ export default function Main() {
               </h3>
               <div className={styles.desc}>powered by <div className={styles.imgWrapper}><Image style={{marginRight: 10}} className={styles.austLogo} width={40} height={40} src={AUstImg} alt="AUst logo" /></div> aUST <div className={styles.imgWrapper}><Image className={styles.zkLogo} width={56} height={40} src={ZkImg} alt="zkSync logo" /></div> zkSync 2.0</div>
               <div className={styles.divider}></div>
-              <h5> Earn <span>19.45%</span> APY while you trade. 
+              <h5> Earn <span>18%</span> APY while you trade. 
               </h5>
               <h5 className={styles.testnet}>Testnet live on Rinkeby.</h5>
               <a className={styles.joinNow} href={Testnet} target="_blank" rel="noreferrer">
@@ -121,10 +121,10 @@ export default function Main() {
           <div className={styles.advantageH}>
             <div className={styles.advantageItem}>
               <Image src={PHl_icon1} width={140} height={149} />
-              <h5>19.45% APY on all collateral</h5>
+              <h5>18% APY on all collateral</h5>
               <div className={styles.line}></div>
               <p>Deposits will be converted to aUST. </p>
-              <p>Earn <span>19.45%</span> APY as traders or LPs.</p>
+              <p>Earn <span>18%</span> APY as traders or LPs.</p>
               <p>&nbsp;</p>
             </div>
 
