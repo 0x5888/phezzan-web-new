@@ -88,7 +88,10 @@ export default function Main() {
           <div className={styles.banner}>
             <div className={styles.bannerLeft}>
               <h3>
-                Democratize Perpetual 
+                Democratize
+              </h3>
+              <h3>
+                Perpetual
                 <span> Trading For All </span>
               </h3>
               <div className={styles.desc}>powered by <div className={styles.imgWrapper}><Image className={styles.zkLogo} width={56} height={40} src={ZkImg} alt="zkSync logo" /></div> zkSync 2.0</div>
