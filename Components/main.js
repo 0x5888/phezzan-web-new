@@ -16,7 +16,7 @@ import styles from '../styles/Home.module.scss'
 
 import { isMobile } from 'react-device-detect';
 
-const Litepaper = "https://roland-1.gitbook.io/phezzan-protocol-testnet-litepaper"
+const Litepaper = "https://litepaper.phezzan.xyz"
 
 const Twitter = "https://twitter.com/PhezzanProtocol"
 
