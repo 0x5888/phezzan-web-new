@@ -16,7 +16,7 @@ import styles from '../styles/Home.module.scss'
 
 import { isMobile } from 'react-device-detect';
 
-const Litepaper = "https://litepaper.phezzan.xyz"
+const Litepaper = "https://learn.phezzan.xyz/"
 
 const Twitter = "https://twitter.com/PhezzanProtocol"
 
@@ -175,7 +175,9 @@ export default function Main() {
           </div>
           <div className={styles.litepaper}>
             <Image src={litepaper_icon} width={242} height={242} alt="litepaper" />
-            <h6>Learn more in our litepaper</h6>
+            <h6 style={{marginBottom:0}}>Read more about Phezzan &</h6>
+            <h6 style={{marginTop:0}}>Learn in Phezzan Academy</h6>
+
             <a className={styles.button} href={Litepaper} target="_blank" rel="noreferrer">Learn now</a>
           </div>
         </div>
