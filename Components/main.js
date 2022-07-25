@@ -20,11 +20,11 @@ const Litepaper = "https://learn.phezzan.xyz/"
 
 const Twitter = "https://twitter.com/PhezzanProtocol"
 
-const Telegram = "https://t.me/phezzanprotocol "
+const Telegram = "https://t.me/phezzanprotocol"
 
 const Medium = "https://medium.com/@phezzan "
 
-const Discord = "https://discord.gg/gEEy2NSV"
+const Discord = "https://discord.gg/n2Nfcwxr"
 
 const Testnet = "https://testnet.phezzan.xyz"
 
