@@ -148,15 +148,15 @@ export default function Main() {
               <h5>Unbelievably fast and cheap</h5>
               <div className={styles.line}></div>
               <p>Lightening fast order execution and unbelievably low fees,</p>
-              <p>powered by <span>zkSync 2.0</span> coming soon.</p>
+              <p>powered by <span>zkSync 2.0</span></p>
             </div>
 
             <div className={styles.advantageItem}>
               <Image src={PHl_icon4} width={140} height={149} />
               <h5>Fully decentralized</h5>
               <div className={styles.line}></div>
-              <p>All orders are executed and settled <span>on-chain</span></p>
-              <p>Perpetual DEX for the masses.</p>
+              <p>All orders are executed and settled on-chain</p>
+              <p>Democratize perpetual trading for all.</p>
             </div>
           </div>
           
