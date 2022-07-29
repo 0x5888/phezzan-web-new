@@ -99,7 +99,7 @@ export default function Main() {
               <div className={styles.desc}>powered by <div className={styles.imgWrapper}><Image className={styles.zkLogo} width={56} height={40} src={ZkImg} alt="zkSync logo" /></div> zkSync 2.0</div>
               <div className={styles.divider}></div>
               <h5><span>Multi-collateral</span> support</h5>
-              <h5>Earn <span>yield</span> APY while you trade</h5>
+              <h5>Earn <span>yield</span> while you trade</h5>
               <h5 className={styles.testnet}>Testnet live on <span>zkSync 2.0.</span></h5>
               <a className={styles.joinNow} href={Testnet} target="_blank" rel="noreferrer">
                 <Image 
