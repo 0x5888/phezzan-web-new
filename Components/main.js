@@ -98,9 +98,9 @@ export default function Main() {
               </h3>
               <div className={styles.desc}>powered by <div className={styles.imgWrapper}><Image className={styles.zkLogo} width={56} height={40} src={ZkImg} alt="zkSync logo" /></div> zkSync 2.0</div>
               <div className={styles.divider}></div>
-              <h5> Faster, cheaper, easier to use. </h5>
-              <h5>Multi-collateral support, earn yield APY while you trade</h5>
-              <h5 className={styles.testnet}>Testnet live on zkSync 2.0.</h5>
+              <h5><span>Multi-collateral</span> support</h5>
+              <h5>Earn <span>yield</span> APY while you trade</h5>
+              <h5 className={styles.testnet}>Testnet live on <span>zkSync 2.0.</span></h5>
               <a className={styles.joinNow} href={Testnet} target="_blank" rel="noreferrer">
                 <Image 
                   src={JoinNow}
@@ -135,10 +135,10 @@ export default function Main() {
 
             <div className={styles.advantageItem}>
               <Image src={PHl_icon2} width={140} height={149} />
-              <h5>Support multi collateral</h5>
+              <h5>Multi-collateral support</h5>
               <div className={styles.line}></div>
-              <p><span>Stablecoins</span> and <span>yield-bearing asset</span></p>
-              <p>can be used as collateral. Coming soon. </p>
+              <p><span>Stablecoins,</span> <span>crypto tokens,</span> and <span>yield-bearing asset</span></p>
+              <p>can be used as collateral.</p>
               <p>&nbsp;</p>
             </div>
           </div>
@@ -155,8 +155,8 @@ export default function Main() {
               <Image src={PHl_icon4} width={140} height={149} />
               <h5>Fully decentralized</h5>
               <div className={styles.line}></div>
-              <p>All orders are executed and settled on-chain</p>
-              <p>Democratize perpetual trading for all.</p>
+              <p>All orders are executed and settled on-chain.</p>
+              <p><span>Democratize perpetual trading for all.</span></p>
             </div>
           </div>
           
