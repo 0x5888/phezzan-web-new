@@ -98,9 +98,9 @@ export default function Main() {
               </h3>
               <div className={styles.desc}>powered by <div className={styles.imgWrapper}><Image className={styles.zkLogo} width={56} height={40} src={ZkImg} alt="zkSync logo" /></div> zkSync 2.0</div>
               <div className={styles.divider}></div>
-              <h5> Earn <span>yield</span> APY while you trade. 
-              </h5>
-              <h5 className={styles.testnet}>Testnet live on Rinkeby.</h5>
+              <h5> Faster, cheaper, easier to use. </h5>
+              <h5>Multi-collateral support, earn yield APY while you trade</h5>
+              <h5 className={styles.testnet}>Testnet live on zkSync 2.0.</h5>
               <a className={styles.joinNow} href={Testnet} target="_blank" rel="noreferrer">
                 <Image 
                   src={JoinNow}
