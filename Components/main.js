@@ -24,7 +24,7 @@ const Telegram = "https://t.me/phezzanprotocol"
 
 const Medium = "https://medium.com/@phezzan "
 
-const Discord = "https://discord.gg/ND8nDMcM"
+const Discord = "https://discord.gg/qfQtDkYQ"
 
 const Testnet = "https://testnet.phezzan.xyz"
 
