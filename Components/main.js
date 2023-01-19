@@ -5,10 +5,10 @@ import logoImg from "../assets/logo@2x.png"
 import AUstImg from "../assets/aUST_logo@2x.png"
 import ZkImg from "../assets/zkSync_logo@2x.png"
 import JoinNowImg from "../assets/JoinNow_btn_Discordlogo@2x.png"
-import PHl_icon1 from "../assets/PHl_icon1_1@2x.png"
-import PHl_icon2 from "../assets/PHl_icon2_1@2x.png"
-import PHl_icon3 from "../assets/PHl_icon3_1@2x.png"
-import PHl_icon4 from "../assets/PHl_icon4_1@2x.png"
+import PHl_icon1 from "../assets/visit.png" //liquidity
+import PHl_icon2 from "../assets/market_1.png"
+import PHl_icon3 from "../assets/traders_1.png"
+import PHl_icon4 from "../assets/keys_1.png"
 import JoinNow from "../assets/JoinNow@2x.png"
 import communitycard_icon from "../assets/communitycard_icon@2x.png";
 import litepaper_icon from "../assets/litepaper_icon@2x.png";
@@ -98,17 +98,18 @@ export default function Main() {
               </h3>
               <div className={styles.desc}>powered by <div className={styles.imgWrapper}><Image className={styles.zkLogo} width={56} height={40} src={ZkImg} alt="zkSync logo" /></div> zkSync 2.0</div>
               <div className={styles.divider}></div>
-              <h5><span>Multi-collateral</span> support</h5>
-              <h5>Earn <span>yield</span> while you trade</h5>
-              <h5 className={styles.testnet}>Testnet live on <span>zkSync 2.0.</span></h5>
-              <a className={styles.joinNow} href={Testnet} target="_blank" rel="noreferrer">
+              {/* Phezzan Protocol is an orderbook perpetual DEX that enables retail liquidity on zkSync 2.0. */}
+              <h5>Orderbook perpetual DEX</h5>
+              <h5>that enables <span>retail liquidity</span></h5>
+              <h5>APY without Impermanent Loss.</h5>
+              <a className={styles.joinNow} href={Discord} target="_blank" rel="noreferrer">
                 <Image 
                   src={JoinNow}
                   width={34}
                   height={24}
-                  alt="Join Testnet"
+                  alt="Join Phezzan Community"
                 />
-                <span>Join Testnet</span>
+                <span>Join Phezzan Community</span>
               </a>
             </div>
             <div className={styles.bannerRight}></div>
@@ -126,37 +127,39 @@ export default function Main() {
           <div className={styles.advantageH}>
             <div className={styles.advantageItem}>
               <Image src={PHl_icon1} width={140} height={149} />
-              <h5>Earn yield as a trader or LP</h5>
+              <h5>For Liquidity Providers</h5>
               <div className={styles.line}></div>
-              <p><span>Yield</span> bearing assets can be used as collateral.</p>
-              <p><span>PnL</span> auto converts to yield bearing assets.</p>
-              <p>&nbsp;</p>
+              <p><span>Choose</span> from a wide range of market making strategies,</p>
+              <p>let professionals manage your capital for you,</p>
+              <p>and earn <span>APY without Impermanent Loss.</span></p>
             </div>
 
             <div className={styles.advantageItem}>
               <Image src={PHl_icon2} width={140} height={149} />
-              <h5>Multi-collateral support</h5>
+              <h5>For Market Makers</h5>
               <div className={styles.line}></div>
-              <p><span>Stablecoins,</span> <span>crypto tokens,</span> and <span>yield-bearing asset</span></p>
-              <p>can be used as collateral.</p>
-              <p>&nbsp;</p>
+              <p>Have more <span>access</span> to retail capital,</p>
+              <p>keep your strategies <span>private</span>,</p>
+              <p>and earn commission <span>on your own terms.</span></p>
             </div>
           </div>
           <div className={styles.advantageH} style={{marginTop: "81px"}}>
             <div className={styles.advantageItem}>
               <Image src={PHl_icon3} width={140} height={149} />
-              <h5>Unbelievably fast and cheap</h5>
+              <h5>For Traders</h5>
               <div className={styles.line}></div>
-              <p>Lightening fast order execution and unbelievably low fees,</p>
-              <p>powered by <span>zkSync 2.0</span></p>
+              <p><span>Deep</span> liquidity and <span>tight</span> spread.</p>
+              <p>CEX like experiences.</p>
+              <p>&nbsp;</p>
             </div>
 
             <div className={styles.advantageItem}>
               <Image src={PHl_icon4} width={140} height={149} />
-              <h5>Fully decentralized</h5>
+              <h5>Not your keys, not your coin</h5>
               <div className={styles.line}></div>
-              <p>All orders are executed and settled on-chain.</p>
-              <p><span>Democratize perpetual trading for all.</span></p>
+              <p>Phezzan does not hold your crypto.</p>
+              <p>All orders are executed and settled <span>on-chain.</span></p>
+              <p>&nbsp;</p>
             </div>
           </div>
           
